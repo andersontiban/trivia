@@ -1,5 +1,5 @@
-import React from 'react';
-import { decodeHTML } from '../lib';
+import React from "react";
+import { decodeHTML } from "../lib";
 
 class AnswerButton extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class AnswerButton extends React.Component {
     return (
       <button
         onClick={this.props.handleGuess}
-        className='btn btn-outline-primary'
+        className="btn btn-outline-primary"
       >
         {decodeHTML(this.props.answer)}
       </button>
